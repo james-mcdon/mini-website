@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mini Website</title>
+    <meta name="description" content="A simple, fast, and responsive mini website." />
+    <meta property="og:title" content="Mini Website" />
+    <meta property="og:description" content="A simple, fast, and responsive mini website." />
+    <meta property="og:type" content="website" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="nav">
+        <a href="#" class="brand">MiniSite</a>
+        <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Launch your mini website</h1>
+        <p>Production-ready static site you can deploy in minutes.</p>
+        <a class="button" href="#contact">Get in touch</a>
+      </section>
+
+      <section class="features grid">
+        <div class="card">
+          <h3>Fast</h3>
+          <p>Zero build, pure static assets, instant loading.</p>
+        </div>
+        <div class="card">
+          <h3>Responsive</h3>
+          <p>Looks great on phones, tablets, and desktops.</p>
+        </div>
+        <div class="card">
+          <h3>Secure</h3>
+          <p>Served over HTTPS with GitHub Pages.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form name="contact" method="post" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="button" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="container">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+    </footer>
+    <script src="./script.js" type="module"></script>
+  </body>
+  </html>
+
+
